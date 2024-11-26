@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubhkumar Patel - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .skill-bar {
+            transition: width 1s ease-in-out;
+        }
+        .reveal {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-blue-600">SP</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-blue-600">About</a>
+                    <a href="#experience" class="hover:text-blue-600">Experience</a>
+                    <a href="#projects" class="hover:text-blue-600">Projects</a>
+                    <a href="#achievements" class="hover:text-blue-600">Achievements</a>
+                    <a href="#contact" class="hover:text-blue-600">Contact</a>
+                </div>
+                <button class="md:hidden" onclick="toggleMenu()">
+                    <i class="bi bi-list text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <a href="#about" class="block py-2 hover:text-blue-600">About</a>
+                <a href="#experience" class="block py-2 hover:text-blue-600">Experience</a>
+                <a href="#projects" class="block py-2 hover:text-blue-600">Projects</a>
+                <a href="#achievements" class="block py-2 hover:text-blue-600">Achievements</a>
+                <a href="#contact" class="block py-2 hover:text-blue-600">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-r from-blue-50 to-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 reveal">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Shubhkumar Patel</h1>
+                    <h2 class="text-xl md:text-2xl text-gray-600 mb-6">Aspiring Data Scientist | AI/ML Enthusiast | Problem Solver</h2>
+                    <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition">Get in Touch</a>
+                </div>
+                <div class="md:w-1/2 mt-10 md:mt-0 reveal">
+                    <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=500" 
+                         alt="Professional Setup" 
+                         class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center reveal">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/3 reveal">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300" 
+                         alt="Shubhkumar Patel" 
+                         class="rounded-full w-64 h-64 object-cover mx-auto shadow-lg">
+                </div>
+                <div class="md:w-2/3 reveal">
+                    <p class="text-gray-600 mb-6">
+                        I am a passionate Data Scientist with a Master's in Big Data Management and Analytics. My journey in the field of AI/ML has been driven by a deep curiosity to solve complex problems and create meaningful impact through data-driven solutions.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        Currently focusing on developing innovative AI solutions and exploring the latest advancements in machine learning technologies.
+                    </p>
+                    <a href="#" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition inline-flex items-center">
+                        <i class="bi bi-download mr-2"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center reveal">Experience</h2>
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-lg shadow-md reveal">
+                    <h3 class="text-xl font-semibold mb-2">AI/ML Intern - Brainwave Matrix Solutions</h3>
+                    <p class="text-gray-500 mb-4">June 2023 - Present</p>
+                    <p class="text-gray-600">Developed and implemented machine learning models for various client projects. Worked on natural language processing and computer vision applications.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md reveal">
+                    <h3 class="text-xl font-semibold mb-2">Manager - Freshly Chopped</h3>
+                    <p class="text-gray-500 mb-4">January 2023 - May 2023</p>
+                    <p class="text-gray-600">Led a team of 10 members, optimized operations, and implemented data-driven decision-making processes.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md reveal">
+                    <h3 class="text-xl font-semibold mb-2">Python Intern - Pythonic Labs</h3>
+                    <p class="text-gray-500 mb-4">May 2022 - August 2022</p>
+                    <p class="text-gray-600">Developed Python applications and contributed to various open-source projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center reveal">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md reveal">
+                    <h3 class="text-xl font-semibold mb-4">Credit Card Fraud Detection</h3>
+                    <p class="text-gray-600 mb-4">Machine learning model to detect fraudulent credit card transactions using anomaly detection techniques.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Scikit-learn</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Pandas</span>
+                    </div>
+                    <a href="#" class="text-blue-600 hover:text-blue-800">
+                        <i class="bi bi-github"></i> View on GitHub
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md reveal">
+                    <h3 class="text-xl font-semibold mb-4">DocuMentor App</h3>
+                    <p class="text-gray-600 mb-4">AI-powered document analysis tool that extracts and summarizes key information from documents.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">NLP</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Flask</span>
+                    </div>
+                    <a href="#" class="text-blue-600 hover:text-blue-800">
+                        <i class="bi bi-github"></i> View on GitHub
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md reveal">
+                    <h3 class="text-xl font-semibold mb-4">Stock Price Prediction</h3>
+                    <p class="text-gray-600 mb-4">Deep learning model for predicting stock prices using historical data and sentiment analysis.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">TensorFlow</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">LSTM</span>
+                    </div>
+                    <a href="#" class="text-blue-600 hover:text-blue-800">
+                        <i class="bi bi-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center reveal">Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 reveal">
+                <div class="text-center">
+                    <i class="bi bi-filetype-py text-5xl text-blue-600 mb-4"></i>
+                    <h3 class="font-semibold">Python</h3>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-blue-600 h-2.5 rounded-full skill-bar" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <i class="bi bi-rocket-takeoff text-5xl text-blue-600 mb-4"></i>
+                    <h3 class="font-semibold">Machine Learning</h3>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-blue-600 h-2.5 rounded-full skill-bar" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <i class="bi bi-graph-up text-5xl text-blue-600 mb-4"></i>
+                    <h3 class="font-semibold">Data Visualization</h3>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-blue-600 h-2.5 rounded-full skill-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <i class="bi bi-cloud text-5xl text-blue-600 mb-4"></i>
+                    <h3 class="font-semibold">AWS</h3>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                        <div class="bg-blue-600 h-2.5 rounded-full skill-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center reveal">Get in Touch</h2>
+            <div class="max-w-2xl mx-auto">
+                <form id="contact-form" class="space-y-6 reveal">
+                    <div>
+                        <label class="block text-gray-700 mb-2">Name</label>
+                        <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Message</label>
+                        <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Send Message</button>
+                </form>
+                <div class="flex justify-center space-x-6 mt-8 reveal">
+                    <a href="#" class="text-gray-600 hover:text-blue-600 text-2xl">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600 text-2xl">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600 text-2xl">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-600">
+            <p>Built by Shubhkumar Patel | Hosted on GitHub Pages</p>
+            <p class="mt-2">&copy; 2023 All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // ScrollReveal initialization
+        ScrollReveal().reveal('.reveal', {
+            distance: '50px',
+            duration: 1000,
+            easing: 'cubic-bezier(0.5, 0, 0, 1)',
+            interval: 100
+        });
+
+        // Form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
